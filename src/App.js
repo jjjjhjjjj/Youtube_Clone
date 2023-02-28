@@ -4,8 +4,8 @@ import SearchForm from "./components/SearchForm/SearchForm";
 import Videos from "./components/Videos/Vidoes";
 import ViewVideo from "./components/ViewVideo/ViewVideo";
 
-const BASE_URL = "https://www.googleapis.com/youtube/v3";
-const API_KEY = "AIzaSyAT021ns2lO1JbJz7hxBIIjxMBvgQdVTPs";
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [videos, setVidoes] = useState([]);
