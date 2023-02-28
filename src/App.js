@@ -13,12 +13,8 @@ function App() {
   const [viewVideo, setViewVideo] = useState("");
 
   useEffect(() => {
-    if (search) {
-      getSearchVideos();
-    } else {
-      getMostPopularVideos();
-    }
-  }, [search]);
+    getMostPopularVideos();
+  }, []);
 
   const getMostPopularVideos = () => {
     fetch("/data/mostPopular.json")
@@ -26,7 +22,7 @@ function App() {
       .then((res) => setVidoes(res.items));
   };
 
-  const getSearchVideos = () => {
+  const getSearchVideos = (search) => {
     // fetch("/data/search.json")
     setViewVideo("");
     fetch(
@@ -54,6 +50,11 @@ function App() {
       .then((items) => setVidoes(items));
   };
 
+  const handleSearchVideo = (search) => {
+    setSearch(search);
+    getSearchVideos(search);
+  };
+
   const handleViewVideo = (video) => {
     setViewVideo(video);
     getRelatedVideos(video);
@@ -61,7 +62,7 @@ function App() {
 
   return (
     <>
-      <SearchForm search={search} onSearch={setSearch} />
+      <SearchForm search={search} onSearch={handleSearchVideo} />
       {viewVideo && <ViewVideo video={viewVideo} />}
       <Videos videos={videos} onView={handleViewVideo} />
     </>
