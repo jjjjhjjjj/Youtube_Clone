@@ -41,11 +41,29 @@ function App() {
       .then((items) => setVidoes(items));
   };
 
+  const getRelatedVideos = (video) => {
+    fetch(
+      `${BASE_URL}/search?key=${API_KEY}&part=snippet&relatedToVideoId=${video.id}&type=video&maxResults=30`
+    )
+      .then((res) => res.json())
+      .then((data) =>
+        data.items.map((item) => {
+          return { ...item, id: item.id.videoId };
+        })
+      )
+      .then((items) => setVidoes(items));
+  };
+
+  const handleViewVideo = (video) => {
+    setViewVideo(video);
+    getRelatedVideos(video);
+  };
+
   return (
     <>
       <SearchForm search={search} onSearch={setSearch} />
       {viewVideo && <ViewVideo video={viewVideo} />}
-      <Videos videos={videos} onView={setViewVideo} />
+      <Videos videos={videos} onView={handleViewVideo} />
     </>
   );
 }
