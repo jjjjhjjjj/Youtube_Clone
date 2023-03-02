@@ -1,6 +1,6 @@
-export default function Video({ video, onView }) {
+export default function Video({ video, onWatch }) {
   const handleClick = () => {
-    onView(video);
+    onWatch(video.id);
   };
 
   return (

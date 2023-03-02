@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SearchForm({ search, onSearch }) {
+export default function SearchForm({ onSearch }) {
   const [text, setText] = useState("");
 
   const handleChange = (e) => {
