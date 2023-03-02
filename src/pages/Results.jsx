@@ -24,7 +24,8 @@ export default function Results() {
   const navigate = useNavigate();
 
   const handleWatchVideo = (videoId) => {
-    navigate(`/Watch/${videoId}`);
+    navigate(`/Watch/${videoId}`, { replace: true });
+    window.scrollTo(0, 0);
   };
 
   return <>{videos && <Videos videos={videos} onWatch={handleWatchVideo} />}</>;
