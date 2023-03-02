@@ -1,5 +1,7 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import SearchForm from "../components/SearchForm/SearchForm";
+import "./../../src/pages.css";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Main() {
   const navigate = useNavigate();
@@ -10,11 +12,15 @@ export default function Main() {
 
   return (
     <>
-      <header>
-        <div>
-          <Link to={"/"}>[Youtube]</Link>
+      <header className="header">
+        <div className="header__logo">
+          <Link to={"/"}>
+            <FaYoutube />
+          </Link>
         </div>
-        <SearchForm onSearch={handleSearch} />
+        <div className="header__search">
+          <SearchForm onSearch={handleSearch} />
+        </div>
       </header>
       <section>
         <Outlet />

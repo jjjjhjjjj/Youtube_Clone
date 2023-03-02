@@ -1,4 +1,6 @@
 import { useState } from "react";
+import styles from "./SearchForm.module.css";
+import { FiSearch } from "react-icons/fi";
 
 export default function SearchForm({ onSearch }) {
   const [text, setText] = useState("");
@@ -18,15 +20,16 @@ export default function SearchForm({ onSearch }) {
   };
 
   return (
-    <form>
+    <form className={styles.form}>
       <input
         type="text"
         placeholder="search"
+        className={styles.input}
         value={text}
         onChange={handleChange}
       />
-      <button type="submit" onClick={handleSubmit}>
-        Search
+      <button type="submit" className={styles.button} onClick={handleSubmit}>
+        <FiSearch />
       </button>
     </form>
   );
