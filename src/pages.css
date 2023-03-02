@@ -31,3 +31,15 @@
 .container {
   width: 100%;
 }
+
+.video__container {
+  display: flex;
+}
+
+.video__view {
+  flex: 2;
+}
+
+.video__list-related {
+  flex: 1;
+}
