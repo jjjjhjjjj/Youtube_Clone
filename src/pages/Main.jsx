@@ -22,7 +22,7 @@ export default function Main() {
           <SearchForm onSearch={handleSearch} />
         </div>
       </header>
-      <section>
+      <section className="container">
         <Outlet />
       </section>
     </>

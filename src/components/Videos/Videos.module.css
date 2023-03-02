@@ -1,0 +1,8 @@
+.list {
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
