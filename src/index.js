@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./error-page";
+
 import Main from "./pages/Main";
 import Results, { loader as resultLoader } from "./pages/Results";
 import Watch, { loader as watchLoader } from "./pages/Watch";
+import ErrorPage from "./pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
