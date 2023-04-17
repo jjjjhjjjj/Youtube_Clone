@@ -4,7 +4,7 @@
 - 사이트 링크 : [Youtube Clone Coding](https://creative-gelato-f80b35.netlify.app)
 
 ## 사용한 기술
-- ![React Badge](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=white) ![React Router Badge](https://img.shields.io/badge/REACT_ROUTER-CA4245?style=flat-square&logo=react-router&logoColor=white) ![JavaScript Badge](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white) ![React Query Badge](https://img.shields.io/badge/React_Query-#FF4154?style=flat-square&logo=postcss&logoColor=white)
+- ![React Badge](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=white) ![React Router Badge](https://img.shields.io/badge/REACT_ROUTER-CA4245?style=flat-square&logo=react-router&logoColor=white) ![JavaScript Badge](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white) ![React Query Badge](https://img.shields.io/badge/REACT_QUERY-#FF4154?style=flat-square&logo=react-query&logoColor=white)
 
 ## 프로젝트 화면 및 소개
 - 메인 페이지  
