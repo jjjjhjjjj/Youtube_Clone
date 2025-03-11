@@ -7,9 +7,9 @@ export async function loader({ params }) {
   const videoId = params.v;
 
   const video = await getDataFromYoutubeAPIs(VIDEO, { videoId });
-  const { videos } = await getDataFromYoutubeAPIs(RELATED, { videoId });
+  //const { videos } = await getDataFromYoutubeAPIs(RELATED, { videoId }); 지원 ❌
 
-  return { video, videos };
+  return { video };
 }
 
 export default function Watch() {
@@ -27,9 +27,9 @@ export default function Watch() {
       <div className="video__view">
         <ViewVideo video={video} />
       </div>
-      <div className="video__list-related">
+      {/* <div className="video__list-related">
         <Videos videos={videos} onWatch={handleWatchVideo} />
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -44,6 +44,9 @@ export async function getDataFromYoutubeAPIs(type, params) {
 }
 
 async function fetchVideos(type, query) {
+  console.log(
+    `${BASE_URL}/${type}?key=${API_KEY}&part=snippet&maxResults=30${query}`
+  );
   return fetch(
     `${BASE_URL}/${type}?key=${API_KEY}&part=snippet&maxResults=30${query}`
   )
