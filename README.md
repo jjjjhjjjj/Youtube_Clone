@@ -6,7 +6,7 @@
 <br>
 
 ## 사용한 기술  
-- ![React Badge](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=white) ![React Router Badge](https://img.shields.io/badge/REACT_ROUTER-CA4245?style=flat-square&logo=react-router&logoColor=white) ![JavaScript Badge](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white) ![React Query Badge](https://img.shields.io/badge/REACT_QUERY-FF4154?style=flat-square&logo=react-query&logoColor=white)  
+- ![React Badge](https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=white) ![React Router Badge](https://img.shields.io/badge/REACT_ROUTER-CA4245?style=flat-square&logo=react-router&logoColor=white) ![JavaScript Badge](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white) 
 <br>
 
 ## 간단한 프로젝트 소개  
